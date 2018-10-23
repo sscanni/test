@@ -3,7 +3,7 @@
 	// Author: Steven Scanniello
 
 	// todayMonth
-	// todayDay: 
+	// todayDay
 	// todayYear
 
 	// curMonth
