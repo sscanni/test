@@ -1,0 +1,123 @@
+<!-- 
+File: calendar.html
+Description: Simple Calendar created with HTML, CSS, JS, and JQuery
+Author: Steven Scanniello
+-->
+<link rel="stylesheet" href="calendar.css">
+<html>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="calendar.js"></script>
+	<body onload="displayMonth();">
+	<div align="center">
+		<div id="sel">Month:
+		<select id="selMonth">
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+		</select>
+		Year:
+		<select id="selYear"></select>
+		<button id="goMonYear" type="button" onclick="goMonthYear()">Go</button>
+		<button id="goToday" type="button" onclick="displayToday()">Today</button>
+		</div>
+	<table>
+		<tbody>
+			<tr>
+				<td class="button"><button type="button" onclick="PreviousMonth();">Prev</button></td>
+				<td id="calhead"; style="width: 124px; height: 40px; text-align: center; font-weight: bold;" colspan="5"></td>
+				<td class="button"><button type="button" onclick="NextMonth()">Next</button></td>
+			</tr>
+				<tr style="height: 26px;">
+				<td class="weekhead";>Sunday</td>
+				<td class="weekhead";>Monday</td>
+				<td class="weekhead";>Tuesday</td>
+				<td class="weekhead";>Wednesday</td>
+				<td class="weekhead";>Thursday</td>
+				<td class="weekhead";>Friday</td>
+				<td class="weekhead";>Saturday</td>
+			</tr>
+			<tr style="height: 94px;">
+				<td id="0"; class="calday";></td>
+				<td id="1"; class="calday";></td>
+				<td id="2"; class="calday";></td>
+				<td id="3"; class="calday";></td>
+				<td id="4"; class="calday";></td>
+				<td id="5"; class="calday";></td>
+				<td id="6"; class="calday";></td>
+			</tr>
+			<tr style="height: 95px;">
+				<td id="7"; class="calday";></td>
+				<td id="8"; class="calday";></td>
+				<td id="9"; class="calday";></td>
+				<td id="10"; class="calday";></td>
+<!--				<td class="calday">
+                 	 <div id="10" style="float: right"></div>
+                	 <br/>
+                	 <div class="appt" style="float: left"><a href="xxxxxxx">1st appt.</a></div>
+                	 <div class="appt" style="float: left"><a href="xxxxxxx">2nd appt.</a></div>
+                	 <div class="appt" style="float: left"><a href="xxxxxxx">3rd appt.</a></div>
+                 	 <div class="appt" style="float: left">12pm Lunch Appointment</div><br/>
+                 	 <div class="appt" style="float: left">5pm Dinner</div><br/>
+                 	 <div class="appt" style="float: left">8pm Meeting at the restuarant</div><br/>
+				</td>
+				 -->
+				<td id="11"; class="calday";></td>
+				<td id="12"; class="calday";></td>
+				<td id="13"; class="calday";></td>
+			</tr>
+			<tr style="height: 95px;">
+				<td id="14"; class="calday";></td>
+				<td id="15"; class="calday";></td>
+				<td id="16"; class="calday";></td>
+				<td id="17"; class="calday";></td>
+				<td id="18"; class="calday";></td>
+<!-- 				<td class="calday">
+				<div id="18" style="float: right"></div>
+                	 <br/>
+                 	 <div class="appt" style="float: left">12pm Lunch</div><br/>
+				</td> -->
+				<td id="19"; class="calday";></td>
+				<td id="20"; class="calday";></td>
+			</tr>
+			<tr style="height: 95px;">
+				<td id="21"; class="calday";></td>
+				<td id="22"; class="calday";></td>
+				<td id="23"; class="calday";></td>
+				<td id="24"; class="calday";></td>
+				<td id="25"; class="calday";></td>
+				<td id="26"; class="calday";></td>
+				<td id="27"; class="calday";></td>
+			</tr>
+			<tr style="height: 95px;">
+				<td id="28"; class="calday";></td>
+				<td id="29"; class="calday";></td>
+				<td id="30"; class="calday";></td>
+				<td id="31"; class="calday";></td>
+				<td id="32"; class="calday";></td>
+				<td id="33"; class="calday";></td>
+				<td id="34"; class="calday";></td>
+			</tr>
+			<tr style="height: 95px;">
+				<td id="35"; class="calday";></td>
+				<td id="36"; class="calday";></td>
+				<td id="37"; class="calday";></td>
+				<td id="38"; class="calday";></td>
+				<td id="39"; class="calday";></td>
+				<td id="40"; class="calday";></td>
+				<td id="41"; class="calday";></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+	<p>&nbsp;</p>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+/* 
+File: calendar.css
+Description: Simple Calendar created with HTML, CSS, JS, and JQuery
+Author: Steven Scanniello
+*/
+.button {
+	width: 124px; 
+	height: 40px; 
+	text-align: center;
+}
+/* .calhead {
+	width: 124px; 
+	height: 40px; 
+	text-align: center; 
+	font-weight: bold;
+	column-span: 5;
+} */
+.weekhead {
+	width: 105px; 
+	height: 26px; 
+	text-align: center; 
+	font-weight: bold;
+}
+.calday {
+	padding: 10px;
+	width: 105px; 
+	height: 94px; 
+	text-align: right; 
+	vertical-align: top; 
+	font-weight: bold;
+}
+table {
+	height: 608px;
+	border:  1px solid black;
+	width: 781px;
+	background-color: 	rgb(232,232,232); 
+	border-collapse: collapse;
+}
+tr td {
+	border:  1px solid black;
+}
+.appt {
+	font-weight: none;
+	font-size: 12;
+/*	overflow-wrap: break-word; */
+/*	overflow:hidden;*/
+/*	text-overflow: ellipsis; */
+}
+#sel {
+	margin-bottom: 10px;
+}
+#goToday {
+	margin-left: 20px;
+}
